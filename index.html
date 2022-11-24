@@ -1,169 +1,170 @@
-<h1>My friends circle</h1>
-<img src="sat.png">
-
-<img src="1.jpg">
-<img src="2.jpg">
-<img src="3.jpg">
-<img src="4.jpg">
-<img src="5.jpg">
-<img src="6.jpg">
-<br>
-<head>
-<meta charset="UTF-8">
-<style>
-
-table {
-
-  font-family: arial, sans-serif;
-
-  border-collapse: collapse;
-
-  width: 100%;
-
-}
-
-td, th {
-
-  border: 1px solid #dddddd;
-
-  text-align: left;
-
-  padding: 4px;
-
-}
-
-tr:nth-child(even) {
-
-  background-color: #dddddd;
-
-}
-
-</style>
-
-</head>
-
-<table>
-
-  <tr>
-
-    <th>Serial Number</th>
-
-    <th>Name</th>
-
-    <th>live in</th>
-
-  </tr>
-
-  <tr>
-
-    <td>1</td>
-
-    <td>Rehaan</td>
-
-    <td>Deeplana</td>
-
-  </tr>
-
-  <tr>
-
-    <td>2</td>
-
-    <td>Satyadeep</td>
-
-    <td>Ramgarh</td>
-
-  </tr>
-
-  <tr>
-
-    <td>3</td>
-
-    <td>Rishabh</td>
-
-    <td>Ramgarh</td>
-
-  </tr>
-
-  <tr>
-
-    <td>4</td>
-
-    <td>Navdeep</td>
-
-    <td>Ramgarh</td>
-    
-  </tr>
+<h1>My friends circle</h1> 
+ <img src="sat.png">
+ 	
+ <img src="sat2.jpg">	
+ <img src="1.jpg"> 
+ <img src="2.jpg"> 
+ <img src="3.jpg"> 
+ <img src="4.jpg"> 
+ <img src="5.jpg"> 
+ <img src="6.jpg"> 
+ <br> 
+ <head> 
+ <meta charset="UTF-8"> 
+ <style> 
   
-  <tr>
-
-    <td>5</td>
-
-    <td>Gurutyan</td>
-
-    <td>Sardargarh 22 NTR</td>
-
-  </tr>
-
-  <tr>
-
-    <td>6</td>
-
-    <td>pawan</td>
-
-    <td>Ramgarh</td>
-
-  </tr>
+ table { 
   
-  <tr>
-
-    <td>7</td>
-
-    <td>Aman Sihag</td>
-
-    <td>Ratanpura</td>
-
-  </tr>
-</table>
-
-<br> 
-<p>Click the button to get your coordinates.</p>
-
-<button onclick="getLocation()">Try It</button>
-
-<p id="demo"></p>
-
-<script>
-
-var x = document.getElementById("demo");
-
-function getLocation() {
-
-  if (navigator.geolocation) {
-
-    navigator.geolocation.getCurrentPosition(showPosition);
-
-  } else { 
-
-    x.innerHTML = "Geolocation is not supported by this browser.";
-
-  }
-
-}
-
-function showPosition(position) {
-
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-
-  "<br>Longitude: " + position.coords.longitude;
-
-}
-
-</script>
-
-<br>
-
-<p style="font-size:48px">
-
-&#128512; <br> &#128516; <br> &#128525; <br> &#128151; <br> &#128517; <br> &#128514; <br> &#128514; <br> &#128514;
-
-</p>
+   font-family: arial, sans-serif; 
+  
+   border-collapse: collapse; 
+  
+   width: 100%; 
+  
+ } 
+  
+ td, th { 
+  
+   border: 1px solid #dddddd; 
+  
+   text-align: left; 
+  
+   padding: 4px; 
+  
+ } 
+  
+ tr:nth-child(even) { 
+  
+   background-color: #dddddd; 
+  
+ } 
+  
+ </style> 
+  
+ </head> 
+  
+ <table> 
+  
+   <tr> 
+  
+     <th>Serial Number</th> 
+  
+     <th>Name</th> 
+  
+     <th>live in</th> 
+  
+   </tr> 
+  
+   <tr> 
+  
+     <td>1</td> 
+  
+     <td>Rehaan</td> 
+  
+     <td>Deeplana</td> 
+  
+   </tr> 
+  
+   <tr> 
+  
+     <td>2</td> 
+  
+     <td>Satyadeep</td> 
+  
+     <td>Ramgarh</td> 
+  
+   </tr> 
+  
+   <tr> 
+  
+     <td>3</td> 
+  
+     <td>Rishabh</td> 
+  
+     <td>Ramgarh</td> 
+  
+   </tr> 
+  
+   <tr> 
+  
+     <td>4</td> 
+  
+     <td>Navdeep</td> 
+  
+     <td>Ramgarh</td> 
+      
+   </tr> 
+    
+   <tr> 
+  
+     <td>5</td> 
+  
+     <td>Gurutyan</td> 
+  
+     <td>Sardargarh 22 NTR</td> 
+  
+   </tr> 
+  
+   <tr> 
+  
+     <td>6</td> 
+  
+     <td>pawan</td> 
+  
+     <td>Ramgarh</td> 
+  
+   </tr> 
+    
+   <tr> 
+  
+     <td>7</td> 
+  
+     <td>Aman Sihag</td> 
+  
+     <td>Ratanpura</td> 
+  
+   </tr> 
+ </table> 
+  
+ <br>  
+ <p>Click the button to get your coordinates.</p> 
+  
+ <button onclick="getLocation()">Try It</button> 
+  
+ <p id="demo"></p> 
+  
+ <script> 
+  
+ var x = document.getElementById("demo"); 
+  
+ function getLocation() { 
+  
+   if (navigator.geolocation) { 
+  
+     navigator.geolocation.getCurrentPosition(showPosition); 
+  
+   } else {  
+  
+     x.innerHTML = "Geolocation is not supported by this browser."; 
+  
+   } 
+  
+ } 
+  
+ function showPosition(position) { 
+  
+   x.innerHTML = "Latitude: " + position.coords.latitude +  
+  
+   "<br>Longitude: " + position.coords.longitude; 
+  
+ } 
+  
+ </script> 
+  
+ <br> 
+  
+ <p style="font-size:48px"> 
+  
+ &#128512; <br> &#128516; <br> &#128525; <br> &#128151; <br> &#128517; <br> &#128514; <br> &#128514; <br> &#128514; 
+  
+ </p>
