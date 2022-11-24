@@ -1,86 +1,121 @@
-body {
-  background-color: whitesmoke;
-  background-image: url("https://www.transparenttextures.com/patterns/lyonnette.png");
-  border-bottom: 0px solid black;
-  height: 450px;
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
   display: flex;
-  justify-content:center;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #6990F2;
 }
 
-/* === Wrapper Styles === */
-#FileUpload {
-  display: flex;
-  justify-content: center;
+::selection{
+  color: #fff;
+  background: #6990F2;
 }
-.wrapper {
-  margin: 30px;
-  padding: 10px;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  border-radius: 10px;
-  background-color: white;
-  width: 415px;
-}
-
-/* === Upload Box === */
-.upload {
-  margin: 10px;
-  height: 85px;
-  border: 8px dashed #e6f5e9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.wrapper{
+  width: 430px;
+  background: #fff;
   border-radius: 5px;
+  padding: 30px;
+  box-shadow: 7px 7px 12px rgba(0,0,0,0.05);
 }
-.upload p {
-  margin-top: 12px;
-  line-height: 0;
-  font-size: 22px;
-  color: #0c3214;
-  letter-spacing: 1.5px;
+.wrapper header{
+  color: #6990F2;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
 }
-.upload__button {
-  background-color: #e6f5e9;
-  border-radius: 10px;
-  padding: 0px 8px 0px 10px;
-}
-.upload__button:hover {
+.wrapper form{
+  height: 167px;
+  display: flex;
   cursor: pointer;
-  opacity: 0.8;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #6990F2;
+}
+form :where(i, p){
+  color: #6990F2;
+}
+form i{
+  font-size: 50px;
+}
+form p{
+  margin-top: 15px;
+  font-size: 16px;
 }
 
-/* === Uploaded Files === */
-.uploaded {
-  width: 375px;
-  margin: 10px;
-  background-color: #e6f5e9;
-  border-radius: 10px;
+section .row{
+  margin-bottom: 10px;
+  background: #E9F0FF;
+  list-style: none;
+  padding: 15px 20px;
+  border-radius: 5px;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+section .row i{
+  color: #6990F2;
+  font-size: 30px;
+}
+section .details span{
+  font-size: 14px;
+}
+.progress-area .row .content{
+  width: 100%;
+  margin-left: 15px;
+}
+.progress-area .details{
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  justify-content: space-between;
+}
+.progress-area .content .progress-bar{
+  height: 6px;
+  width: 100%;
+  margin-bottom: 4px;
+  background: #fff;
+  border-radius: 30px;
+}
+.content .progress-bar .progress{
+  height: 100%;
+  width: 0%;
+  background: #6990F2;
+  border-radius: inherit;
+}
+.uploaded-area{
+  max-height: 232px;
+  overflow-y: scroll;
+}
+.uploaded-area.onprogress{
+  max-height: 150px;
+}
+.uploaded-area::-webkit-scrollbar{
+  width: 0px;
+}
+.uploaded-area .row .content{
+  display: flex;
   align-items: center;
 }
-.file {
+.uploaded-area .row .details{
   display: flex;
+  margin-left: 15px;
   flex-direction: column;
 }
-.file__name {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 300px;
-  line-height: 0;
-  color: #0c3214;
-  font-size: 18px;
-  letter-spacing: 1.5px;
+.uploaded-area .row .details .size{
+  color: #404040;
+  font-size: 11px;
 }
-.fa-times:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-.fa-file-pdf {
-  padding: 15px;
-  font-size: 40px;
-  color: #0c3214;
+.uploaded-area i.fa-check{
+  font-size: 16px;
 }
